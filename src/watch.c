@@ -227,10 +227,10 @@ main(int argc, const char **argv){
         }
 
         // exit > 0
-        if (WEXITSTATUS(status)) {
-          fprintf(stderr, "\033[90mexit: %d\33[0m\n\n", WEXITSTATUS(status));
-	  if (halt) exit(WEXITSTATUS(status));
-	}
+  //       if (WEXITSTATUS(status)) {
+  //         fprintf(stderr, "\033[90mexit: %d\33[0m\n\n", WEXITSTATUS(status));
+	//   if (halt) exit(WEXITSTATUS(status));
+	// }
 
 	mssleep(interval);
 	goto loop;
